@@ -3,8 +3,8 @@ platform: linux
 
 image_resource:
   type: docker-image
-  source: {repository: busybox}
+  source: {repository: node}
 
 run:
-  path: echo
-  args: [hello world]
+  path: yarn
+  args: [run test]

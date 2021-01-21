@@ -1,0 +1,14 @@
+{
+  "name": "build-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:saldoukhov/build-demo.git",
+  "author": "Sergey Aldoukhov <saldoukhov@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "ts-node --version"
+  },
+  "devDependencies": {
+    "ts-node": "^9.1.1"
+  }
+}
