@@ -6,5 +6,5 @@ image_resource:
   source: {repository: node}
 
 run:
-  path: ls
-  args: [..]
+  path: resource-build-demo-source/build.sh
+#  args: [..]

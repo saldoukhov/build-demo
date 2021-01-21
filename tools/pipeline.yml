@@ -12,12 +12,12 @@ jobs:
     plan:
       - get: resource-build-demo-source
       - task: build
-      #        config:
-      #          platform: linux
-      #          image_resource:
-      #            type: registry-image
-      #            source: { repository: node }
-      #          run:
-      #            path: ls
-      #            args: [..]
+#        config:
+#          platform: linux
+#          image_resource:
+#            type: registry-image
+#            source: { repository: node }
+#          run:
+#            path: ls
+#            args: [ .. ]
         file: resource-build-demo-source/tools/task_build.yml
