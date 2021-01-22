@@ -2,6 +2,6 @@
 
 set -eux # fail fast, print commands
 
-cd resource-build-demo-source
+cd build-demo-source
 yarn
 yarn run test
