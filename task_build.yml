@@ -1,0 +1,15 @@
+---
+platform: linux
+
+image_resource:
+  type: registry-image
+  source: {repository: node}
+
+inputs:
+  - name: build-demo-source
+
+caches:
+  - path: build-demo-source/node_modules
+
+run:
+  path: build-demo-source/build.sh

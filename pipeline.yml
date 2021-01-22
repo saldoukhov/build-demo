@@ -1,0 +1,15 @@
+---
+resources:
+  - name: build-demo-source
+    type: git
+    source:
+      uri: https://github.com/saldoukhov/build-demo.git
+      branch: main
+
+jobs:
+  - name: build-demo-job
+    public: true
+    plan:
+      - get: build-demo-source
+      - task: build
+        file: build-demo-source/task_build.yml

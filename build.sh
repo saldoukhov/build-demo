@@ -1,6 +1,7 @@
 #!/bin/sh
 
-set -e # fail fast
-set -x # print commands
+set -eux # fail fast, print commands
 
-node --version
+cd resource-build-demo-source
+yarn
+yarn run test
