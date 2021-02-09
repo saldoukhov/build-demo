@@ -13,3 +13,18 @@ jobs:
       - get: build-demo-source
       - task: build
         file: build-demo-source/task_build.yml
+
+  - name: list-bucket
+    public: true
+    plan:
+      - task: list
+        config:
+          platform: linux
+          image_resource:
+            type: registry-image
+            source: {repository: node}
+          run:
+            path: aws
+            args: [s3 ls keeper-files/AN/DEV/]
+
+

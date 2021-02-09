@@ -1,0 +1,12 @@
+---
+platform: linux
+
+image_resource:
+  type: registry-image
+  source: {repository: node}
+
+inputs:
+  - name: build-demo-source
+
+run:
+  path: build-demo-source/upload.sh
